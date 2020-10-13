@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/assets/css/error.css">
+    <title>404 Not found | Project-D4RK</title>
+</head>
+
+<body>
+    <div id="main">
+        <h1 id="title">OOPS!</h1>
+        <h2 id="desc">404 - The Page can't be found</h2>
+    </div>
+    <p id="desctwo">It looks like the URL doesnt exist... Try again later?</p>
+    <button id="btn" onclick="document.location.href='/'">Go to homepage</a></button>
+</body>
+<div class="footer">
+    <p id="footerstatus">SERVER STATUS: 404 (Page Not Found)</p>
+</div>
+
+<script>
+    setTimeout(function () {
+        document.getElementById("main").style.transform = "translate(-50%,-50%) scale(1,1)"
+        document.getElementById("title").style.fontSize = (window.innerWidth + window.innerHeight) / 12 + "px"
+        document.getElementById("desc").style.fontSize = (window.innerWidth + window.innerHeight) / 67 + "px"
+        document.getElementById("desctwo").style.fontSize = (window.innerWidth + window.innerHeight) / 100 + "px"
+        document.getElementById("footerstatus").style.fontSize = (window.innerWidth + window.innerHeight) / 140 + "px"
+        document.getElementById("btn").style.fontSize = (window.innerWidth + window.innerHeight) / 67 + "px"
+        setTimeout(function () {
+            document.getElementById("main").style.top = "20%"
+            setTimeout(function () {
+                document.getElementById("btn").style.zIndex = "1"
+                document.getElementById("btn").style.opacity = "1"
+                setTimeout(function() {
+                    document.getElementById("desctwo").style.opacity = "1";
+                    setTimeout(function() {
+                        document.getElementsByClassName("footer")[0].style.opacity = "1";
+                    },400)
+                },1500)
+            }, 1000)
+        }, 2000)
+    })
+</script>
+</body>
+</html>
