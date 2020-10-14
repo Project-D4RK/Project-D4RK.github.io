@@ -66,6 +66,19 @@
             } 
         } 
 
+        .fadein-three { 
+            animation: fadeInAnimation ease 12s; 
+            animation-iteration-count: 1; 
+            animation-fill-mode: forwards; 
+        } 
+        @keyframes fadeInAnimation { 
+            0% { 
+                opacity: 0; 
+            } 
+            100% { 
+                opacity: 1; 
+            } 
+        } 
         
     </style>
     <!-- End of Inpage CSS -->
@@ -78,11 +91,11 @@
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="masthead mb-auto">
     <div class="inner">
-      <h3 class="masthead-brand">PROJECT-D4RK</h3>
-      <nav class="nav nav-masthead justify-content-center">
-        <a class="nav-link active" href="/">Home</a>
-        <a class="nav-link" href="https://github.com/Project-D4RK/">GitHub</a>
-        <a class="nav-link" href="/contact/">About & Contact</a>
+      <h3 class="masthead-brand fadein-two">PROJECT-D4RK</h3>
+      <nav class="nav nav-masthead justify-content-center fadein-two">
+        <a class="nav-link active fadein-two" href="/">Home</a>
+        <a class="nav-link fadein-two" href="https://github.com/Project-D4RK/">GitHub</a>
+        <a class="nav-link fadein-two" href="/contact/">About & Contact</a>
       </nav>
     </div>
   </header>
@@ -98,7 +111,7 @@
   <!-- Start of Footer -->
   <footer class="mastfoot mt-auto">
     <div class="inner">
-      <p class="fadein-two"><b>2020 &#169; Project-D4RK</b> - Proud partner of <a href="https://fiveninedark.com/">5/9Dark</a></p>
+      <p class="fadein-three"><b>2020 &#169; Project-D4RK</b> - Proud partner of <a href="https://fiveninedark.com/">5/9Dark</a></p>
       <!-- Made by CRO at FND - crothehacker @ FiveNineDark [DOT] com -->
     </div>
   </footer>
